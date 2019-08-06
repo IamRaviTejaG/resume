@@ -1,0 +1,165 @@
+% Plain Text Resume
+% Author: Ravi Teja Gannavarapu
+% Last updated: 04 August 2019
+
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage[left=1cm, right=1cm, top=-1.6cm, bottom=-1.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titling}
+\usepackage{xcolor}
+
+% Custom sized bullet
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+% Subtitle command
+\newcommand{\subtitle}[1]{% 
+	\posttitle{%
+		\par \end{center}
+		\begin{center}\small#1\end{center}
+		\vskip0.5em}%
+}
+
+\definecolor{veronica}{rgb}{0.0, 0.45, 0.73}
+
+% Disables page numbering
+\pagenumbering{gobble}
+\setitemize{labelindent=0em, labelsep=0.2cm, leftmargin=*, align=left}
+\setlength{\parindent}{0ex}
+% For generating a smaller bullet for level 2 list items
+\renewcommand\labelitemii{$\sbullet$}
+
+\begin{document}
+
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% 								 HEADING
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\title{\Huge{\textbf{\textcolor{veronica}{Ravi Teja}} Gannavarapu}}
+\subtitle{\small{(91)-7008048761\hspace{0.2cm}\textbullet\hspace{0.2cm}\href{mailto:iamravitejag@gmail.com}{iamravitejag@gmail.com}\hspace{0.2cm}\textbullet\hspace{0.2cm}\href{https://github.com/IamRaviTejaG}{github.com/IamRaviTejaG}\hspace{0.2cm}\textbullet\hspace{0.2cm}\href{https://linkedin.com/in/IamRaviTejaG}{linkedin.com/in/IamRaviTejaG}}}
+\date{}
+\maketitle{}
+
+\vspace{-3.5cm}
+
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% 								EDUCATION
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\Large{\textbf{EDUCATION}}\vspace{-0.5cm}\newline
+\rule{19cm}{0.01cm}
+\vspace{-0.4cm}
+\begin{itemize}
+\item{\large{\textsc{International Institute of Information Technology, Bhubaneswar}}\vspace{-0.2cm}\newline
+\normalsize{\textit{Bachelor of Technology -- Electronics \& Telecommunication.\hspace{4cm}{Aug 2016 - Jun 2020}}}}
+\vspace{-1.1cm}
+\item{\large{\textsc{DAV Public School, Berhampur}}\vspace{-0.2cm}\newline
+\normalsize{\textit{Intermediate \& Matriculation.\hspace{9.3cm}\textit{Apr 2001 - May 2015}}}}
+\end{itemize}
+
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% 								EXPERIENCE
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\Large{\textbf{EXPERIENCE}}\vspace{-0.5cm}\newline
+\rule{19cm}{0.01cm}
+\vspace{-0.4cm}
+\begin{itemize}
+\item{\large{\textsc{GroceriStar} -- \textit{Remote JavaScript Software Developer Intern}}\hspace{1.8cm}\textit{\normalsize{Jul 2019 - Present}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Working on feature improvements along with the backend team.}}\vspace{-0.4cm}
+		\item{\small{Build JavaScript libraries for future use.}}
+	\end{itemize}
+\vspace{-0.5cm}
+\item{\large{\textsc{Python-Hydra} -- \textit{Open Source Contributor}}\hspace{5.1cm}\textit{\normalsize{Feb 2018 - Apr 2018}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Built a CLI tool to control the hydrus flagship server.}}\vspace{-0.4cm}
+		\item{\small{Fixed bugs related to the server flask code.}}
+	\end{itemize}
+\vspace{-0.5cm}
+\item{\large{\textsc{OSS Organizations} -- \textit{Open Source Contributor}}\hspace{4cm}\textit{\normalsize{Aug 2017 - Present}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Wrote Python, Golang \& Node.js code for various organizations like coala, FeathersJS, SCoRe Lab.}}
+	\end{itemize}
+\end{itemize}
+
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% 								PROJECTS
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\Large{\textbf{PROJECTS}}\vspace{-0.5cm}\newline
+\rule{19cm}{0.01cm}
+\vspace{-0.4cm}
+\begin{itemize}
+\item{\large{\textsc{SecureSend} \textit{(Node.js, React.js)\hspace{9.4cm} \normalsize{Mar 2019}}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Allows files to be sent securely over the internet using PGP encryption.}}\vspace{-0.4cm}
+		\item{\small{Files are encrypted on the client side, and then sent to and decrypted on the server.}}
+	\end{itemize}
+\vspace{-0.4cm}
+\item{\large{\textsc{Koyofea} \textit{(Node.js, MySQL, React.js)\hspace{6.2cm} \normalsize{Jun 2018 - Sep 2018}}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Built a powerful low latency RESTful API in Node.js, which powers a robust hiring management platform.}}\vspace{-0.4cm}
+		\item{\small{Wrote extremely modular and reusable code, which could be used as a boilerplate code for various apps.}}
+	\end{itemize}
+\vspace{-0.4cm}
+\item{\large{\textsc{Go \& Py SplitJoin} \textit{(Golang, Python)\hspace{7.9cm} \normalsize{Dec 2018}}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Built a cross platform file splitting and joining app.}}\vspace{-0.4cm}
+		\item{\small{Used zero external dependencies, and also built a powerful command line interface for usability.}}
+
+	\end{itemize}
+\vspace{-0.4cm}
+\item{\large{\textsc{Node Bitcoin Price Converter} \textit{(Node.js, Pug)\hspace{5.2cm} \normalsize{Nov 2017}}}}\vspace{-1.3cm}\newline
+	\begin{itemize}
+		\item{\small{Built a bitcoin price converter, which provided conversation rate to many currencies.}}\vspace{-0.4cm}
+		\item{\small{The app supports over 220 currencies, including fiat and cryptocurrencies.}}
+	\end{itemize}
+\end{itemize}
+
+\vspace{0.1cm}
+
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% 	    						   TECHNICAL SKILLS
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\Large{\textbf{TECHNICAL SKILLS}}\vspace{-0.5cm}\newline
+\rule{19cm}{0.01cm}
+\vspace{-0.4cm}
+\begin{itemize}
+\item{\large{\textbf{Languages}: Python, JavaScript, Node.js, Golang, C++, SQL, HTML \& CSS.}\vspace{-0.4cm}}
+\item{\large{\textbf{Tools:} Git, GitHub, MySQL, MongoDB, PostgreSQL, Elasticsearch  \& \LaTeX .}\vspace{-0.4cm}}
+\item{\large{\textbf{Frameworks:} Mocha, Chai, Flask \& Bootstrap.}}
+\end{itemize}
+
+\vspace{0.1cm}
+
+
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% 								ACTIVITIES
+% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+\Large{\textbf{ACTIVITIES}}\vspace{-0.5cm}\newline
+\rule{19cm}{0.01cm}
+\vspace{-0.4cm}
+\begin{itemize}
+\item{\normalsize{Mentored over 200 students and organized over 15 workshops, as member of the programming society.}}\vspace{-1.3cm}\newline
+\item{\normalsize{Ranked \textbf{25/1010} in the \textbf{GirlScript Summer of Code 2018.}}}\vspace{-1.3cm}\newline
+\item{\normalsize{Was chosen as the \textbf{co-captain} of \textbf{Mozilla Club} of the institute's programming society.}}
+\end{itemize}
+
+\end{document}
